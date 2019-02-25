@@ -1,0 +1,26 @@
+div.cuadro-perfil-azul{
+     width: 300px;
+     height: 150px;
+     border-top-left-radius: 15px;
+     border-top-right-radius: 15px; 
+     background-color: #0EA7E0;
+     box-shadow: 0 4px 8px 0 rgba(0, 0,0, 0.2), 0 6px 20px 0 rgba(0, 0,0, 0.19);
+}
+div.cuadro-perfil-gris{
+    width: 300px;
+    height: 150px;
+    background-color: #EBEBEB;
+    box-shadow: 0 4px 8px 0 rgba(0, 0,0, 0.2), 0 6px 20px 0 rgba(0, 0,0, 0.19);
+}
+img{
+    padding-top: 75px;
+    padding-left: 75px;
+    padding-bottom: 75px;
+    padding-right: 75px;
+    border-radius: 50%;
+}
+
+div.container{
+    text-align: center;
+    padding: 10px 20px;
+}
