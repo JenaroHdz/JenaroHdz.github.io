@@ -27,8 +27,9 @@ div.cuadro-blanco{
     height: 1150px;
     background-color: #FFFFFF;
 }
-.centrar{
-    text-align: center
+.centrar{text-align: center;}
+div.icon-explab-tam{
+    height: 50px;
 }
 div.contenedor-ht-left{
     margin-top: 15px;
@@ -45,14 +46,65 @@ div.contenedor-ht-right{
 div.contenedor-espe{
     margin-top: 0px;
     width: 180px;
-    height: 90px;
+    height: 80px;
     background-color:#FFFFFF;
+}
+
+div.contenedor-fa-tp4,
+div.contenedor-fa-tp3,
+div.contenedor-fa-tp2,
+div.contenedor-fa-tp1,
+div.contenedor-fa-tp{
+    width: 350px;
+    margin-top: 0px;
+}
+div.contenedor-fa-tp1{
+    text-align: center;
+}
+div.contenedor-fa-tp2{
+    margin-top: 10px;
+    padding-left: 20px;
+    text-align: left;
+}
+div.contenedor-fa-tp3{
+    width: 345px;
+    margin-top: 15px;
+    text-align: center;
+}
+div.contenedor-fa-tp4{
+    margin-top: 10px;
+    padding-left: 20px;
+    text-align: left;
+}
+div.contenedor-fa2,
+div.contenedor-fa1,
+div.contenedor-fa{
+    width: 180px;
+    height: 80px;
+    text-align: center;
+    margin-left: 5px;
+    
+}
+div.contenedor-fa1{
+    margin-top: 5px;
+}
+div.contenedor-fa2{
+    margin-top: 20px;
+}
+
+
+div.linea-v{
+    height: 95px;
+    width: 2px;
+    margin-left: -7px;
+    margin-top: 28px;
+    background-color: #DDDDDD;
 }
 li.clean-point{
     list-style: none;
 }
 .margen{
-    margin-top:0px;
+    margin-top:5px;
     margin-bottom: 0px;
 }
 div.color{
