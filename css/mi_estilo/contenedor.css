@@ -107,6 +107,15 @@ li.clean-point{
     margin-top:5px;
     margin-bottom: 0px;
 }
+div.tam-ref{
+    margin-left: 5px;
+    width: 200px;
+    height: 70px;
+}
 div.color{
     background-color: #0EA7E0;
+}
+a.pos-text{
+    margin-top: 15px;
+    margin-left: -65px;
 }
