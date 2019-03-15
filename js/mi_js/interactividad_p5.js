@@ -16,7 +16,7 @@ let num = prompt("Indica un número mayor o igual a 20:");
 if(num >= 20){
    crearBtn();
 }else{
-    alert(":( Gracias por no seguir las instrucciones :(")
+    alert("Gracias por no seguir las instrucciones :(")
 }
 
 function crearBtn(){
@@ -27,9 +27,9 @@ function crearBtn(){
         boton.id = "boton_"+i;
         boton.type = "button";
         boton.value = ""+i;
-        boton.className = "celda2";
+      //  boton.className = "celda2";
+
         //inserto mi boton al html
-        
         document.getElementById("cboton").appendChild(boton);
         document.getElementById("boton_"+i).style.height = "45px";
         document.getElementById("boton_"+i).style.width = "45px";
