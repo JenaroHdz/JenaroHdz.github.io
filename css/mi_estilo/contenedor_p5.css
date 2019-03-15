@@ -1,22 +1,27 @@
 div.izquierda{
-    width: 150px;
+    margin-top: 20px;
+    margin-left: 26%;
+    width: 200px;
     display: inline-block;
     vertical-align: top;
     background-color:#21618C;
 }
 div.derecha{
-    width: 400px;
+    margin-top: 20px;
+    width: 550px;
     display: inline-block;
     background-color:#943126;
-    padding: 1em;
+    padding: 2em;
+    margin-left: 10px;
 }
 button.celda{
     height: 35px;
-    width: 100px;
+    width: 150px;
     background-color: #2E86C1;
     color: #ffffff;
     border: 0px;
     text-align: center;
+    margin-top: 0.3em;
     margin-bottom: 0.3em;
     margin-right: 0.3em;
     margin-left: 1.8em;

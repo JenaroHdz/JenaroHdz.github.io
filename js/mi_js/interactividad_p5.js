@@ -31,8 +31,8 @@ function crearBtn(){
         //inserto mi boton al html
         
         document.getElementById("cboton").appendChild(boton);
-        document.getElementById("boton_"+i).style.height = "35px";
-        document.getElementById("boton_"+i).style.width = "35px";
+        document.getElementById("boton_"+i).style.height = "45px";
+        document.getElementById("boton_"+i).style.width = "45px";
         document.getElementById("boton_"+i).style.backgroundColor = "#4DB6AC";
         document.getElementById("boton_"+i).style.border = "0px";
         document.getElementById("boton_"+i).style.marginLeft = "2px";
