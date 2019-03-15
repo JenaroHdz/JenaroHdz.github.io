@@ -125,6 +125,7 @@ num_primos.onclick = function(){
         if(contador == 2 && numP.includes(i) == false){
             contador = 0;
             document.getElementById("boton_"+i).style.backgroundColor = "#2E4053";
+            document.getElementById("boton_"+i).style.color = "#ffffff";
             numP.push(i);
             numOcup.push(i);
         }else if(contador > 2){
@@ -136,6 +137,7 @@ num_primos.onclick = function(){
 limpiar.onclick = function(){
     for(i=1; i <= num; i++){
             document.getElementById("boton_"+i).style.backgroundColor = "#4DB6AC";
+            document.getElementById("boton_"+i).style.color = "#000000";
             numOcup.splice(0,num);
             numP.splice(0,num);
     }
