@@ -1,5 +1,4 @@
 div.izquierda{
-   
     width: 150px;
     display: inline-block;
     vertical-align: top;
@@ -9,7 +8,7 @@ div.derecha{
     width: 400px;
     display: inline-block;
     background-color:#d31d63;
-    padding: 2em;
+    padding: 1em;
 }
 button.celda{
     height: 35px;
@@ -22,4 +21,7 @@ button.celda{
 h3{
  color: aliceblue;
  text-align: center;  
+ margin-block-start: 0em;
+
+ 
 }
