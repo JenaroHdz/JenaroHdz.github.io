@@ -16,7 +16,7 @@ let num = prompt("Indica un número mayor o igual a 20:");
 if(num >= 20){
    crearBtn();
 }else{
-    alert("Gracias por no seguir las instrucciones :(")
+    alert("Gracias por no seguir las instrucciones :(");
 }
 
 function crearBtn(){
@@ -130,10 +130,10 @@ num_primos.onclick = function(){
             numOcup.push(i);
         }else if(contador > 2){
             contador = 0;
-        }
-        
+        }       
     }
 }
+
 limpiar.onclick = function(){
     for(i=1; i <= num; i++){
             document.getElementById("boton_"+i).style.backgroundColor = "#4DB6AC";
@@ -143,4 +143,3 @@ limpiar.onclick = function(){
     }
     document.getElementById("boton_1").style.backgroundColor = "#1c0f94";
 }
-
