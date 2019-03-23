@@ -3,4 +3,9 @@
 }
 .centrar{
     text-align: center;
+    color: aliceblue
+}
+.margen-tablero{
+    margin: 30px;
+    width: 300px;
 }
