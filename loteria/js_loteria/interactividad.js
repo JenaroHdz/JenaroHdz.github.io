@@ -1,4 +1,4 @@
-let num_tableros = 3;
+let num_tableros = 6;
 let imagenes = [
     './img_loteria/alacran.png',
     './img_loteria/apache.png',
@@ -56,11 +56,19 @@ let imagenes = [
     './img_loteria/violoncello.png',
 ];
 
-function obtenerImagenAleatoria(){
-    return imagenes[Math.floor(Math.random()*imagenes.length)];
+let img_consultado;
+let img_mezclado = [];
+let img_obtenido;
+
+function obtenerImagenAleatoria(){ 
+    img_consultado = imagenes[Math.floor(Math.random()*imagenes.length)];
+    if(img_mezclado.includes(img_consultado) == false){
+        img_mezclado.push(img_consultado);
+        return img_consultado;
+    }
 }
+
 function crearTablero(){
-    
     for(i=1; i <= num_tableros; i++){
         //declaro mi componente
         let tablero = document.createElement("div");
@@ -82,12 +90,18 @@ function crearTablero(){
             let imagen = document.createElement("img");
             let num_carta = document.createElement("div");
             let name_carta = document.createElement("div");
-            
+        
             carta_Tab.id = "Tab_"+i+"Carta"+j;
             imagen.id = "Tab_"+i+"img"+j;
             num_carta.id = "Tab_"+i+"num"+j;
             name_carta.id = "Tab_"+i+"name"+j;
+            
+            do{
+               img_obtenido = obtenerImagenAleatoria();
+            }while(img_obtenido == undefined);
 
+           // document.writeln(""+img_obtenido+" "+j)
+            
             document.getElementById("tablero"+i).appendChild(carta_Tab);
             document.getElementById("Tab_"+i+"Carta"+j).appendChild(num_carta); 
             document.getElementById("Tab_"+i+"Carta"+j).appendChild(imagen);
@@ -103,23 +117,25 @@ function crearTablero(){
             document.getElementById("Tab_"+i+"num"+j).innerHTML= ""+j;
             document.getElementById("Tab_"+i+"num"+j).style.paddingLeft = "5px";
             document.getElementById("Tab_"+i+"num"+j).style.color = "aliceblue";
-
-            document.getElementById("Tab_"+i+"img"+j).src = obtenerImagenAleatoria();
+           
+            document.getElementById("Tab_"+i+"img"+j).src = img_obtenido;
             document.getElementById("Tab_"+i+"img"+j).style.marginTop = "0px";
             document.getElementById("Tab_"+i+"img"+j).style.height = "70px";
             document.getElementById("Tab_"+i+"img"+j).style.width = "75px";
 
-            document.getElementById("Tab_"+i+"name"+j).innerHTML= "Nombre";
+            document.getElementById("Tab_"+i+"name"+j).innerHTML= "Tarjeta "+j;
             document.getElementById("Tab_"+i+"name"+j).className= "centrar";
             //document.getElementById("Tab_"+i+"name"+j).style.paddingLeft = "2px";
             document.getElementById("Tab_"+i+"name"+j).style.color = "aliceblue";
-            
-            
-           // document.getElementById("Tab_"+i+"img"+j).style.margin = "2px";
-           // document.getElementById("Tab_"+i+"img"+j).style.border = "solid 1px";
-        
-        }        
-    } 
+
+            if(j == 16){
+                img_mezclado.splice(0, 16);
+            }
+  
+        }
+               
+    }
+    
 }
 
 crearTablero();
